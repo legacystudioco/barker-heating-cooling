@@ -65,18 +65,18 @@
         }
 
         .logo {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
-            font-weight: 800;
-            color: var(--primary-blue);
             display: flex;
             align-items: center;
-            gap: 10px;
         }
 
-        .logo::before {
-            content: '🏠';
-            font-size: 32px;
+        .logo img {
+            height: 50px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+
+        .logo img:hover {
+            transform: scale(1.05);
         }
 
         .nav {
@@ -742,7 +742,9 @@
         </div>
         <div class="container">
             <div class="header-content">
-                <div class="logo">BARKER HVAC</div>
+                <div class="logo">
+                    <img src="barker-logo.png" alt="Barker HVAC - Dayton's Trusted Heating & Cooling Experts Since 1918">
+                </div>
                 <nav class="nav">
                     <a href="#home" class="active">Home</a>
                     <a href="#services">Services</a>
